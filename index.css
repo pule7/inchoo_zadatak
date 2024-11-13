@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+  }
+  
+  #header-black {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 6rem;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  
+  #header-black li a {
+    text-decoration: underline;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header li {
+    margin-left: 1rem;
+  }
+  
+  #logo {
+    height: 8rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+  }
+  
+  #header-white {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: calc(100% - 12rem);
+    padding: 0 6rem;
+    height: 3.5rem;
+  }
+  
+  #header-white ul {
+    list-style: none;
+    margin-top: 0;
+  }
+  
+  #header-white li :hover {
+    color: orange;
+  }
+  
+  li div {
+    display: flex;
+  }
+  
+  span {
+    margin-top: 0.6rem;
+    margin-right: 0.5rem;
+    font-size: 2.6rem;
+  }
+  
+  input {
+    height: 2rem;
+    margin-top: 1rem;
+    width: 15rem;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 2rem;
+    border: 2px rgb(47, 47, 47) solid;
+  }
+  
+  input:hover {
+    border-color: rgb(122, 113, 113);
+  }
+  
+  #my-cart {
+    display: inline-block;
+    margin-top: 1.1rem;
+    margin-left: 1.5rem;
+    background-color: green;
+    height: 1.2rem;
+    width: 9rem;
+    padding: 0.3rem;
+    color: white;
+    text-align: center;
+  }
+
+  main {
+    padding: 0 6rem;
+  }
+
+  h1 {
+    color: rgb(47, 47, 47);
+  }
+
+  .bold {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
