@@ -28,6 +28,7 @@
         >
         <a class="bold" href="#">SIGN IN</a>
       </section>
+
       <section id="header-white">
         <img src="/images/logo-web-inchoo.webp" id="logo" alt="inchoo logo" />
         <nav>
@@ -46,16 +47,144 @@
             </li>
           </ul>
         </nav>
-        <div>
+        <div id="input-cart">
           <input type="text" placeholder="Search entire store here..." />
-          <div id="my-cart">&#128722;MY CART</div>
+          <div>&#128722;MY CART</div>
         </div>
       </section>
-      <hr />
+
+      <!-- <hr id="header-hr" /> -->
     </header>
     <main>
       <h1>SHOPPING CART</h1>
+      <div id="shopping-div">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>SUBTOTAL</th>
+              <th></th>
+              <th id="summary">SUMMARY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+            <tr>
+              <td class="item-card">
+                <img src="images/jeep1.jpg" class="table-images" />
+                <div>
+                  <p>
+                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                    CLEAR SIDE AND REAR WINDOWS
+                  </p>
+                  <p>Color: Black Denim</p>
+                </div>
+              </td>
+              <td><div class="qty">1</div></td>
+              <td>$150.00</td>
+              <td>
+                <span>&#128393;</span>
+                <span>&#9447;</span>
+              </td>
+              <td rowspan="4">
+                <aside>
+                  <div>
+                    <ul>
+                      <li class="flex-calculate">
+                        <p>ESTIMATE SHIPPING AND TAX</p>
+                        <div>&#x2795;</div>
+                      </li>
+                      <li>
+                        <div class="flex-calculate">
+                          <p id="p-subtotal">SUBTOTAL</p>
+                          <div>$150.00</div>
+                        </div>
+                        <div class="flex-calculate">
+                          <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
+                          <div>$5.00</div>
+                        </div>
+                      </li>
+                      <li id="last-li">
+                        <div class="flex-calculate">
+                          <h2>ORDER TOTAL</h2>
+                          <div>$155.00</div>
+                        </div>
+                        <div id="checkout-btn">PROCEED TO CHECKOUT</div>
+                        <div id="checkout-last-div">
+                          <a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </aside>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+            <tr>
+              <td class="item-card">
+                <img src="images/jeep1.jpg" class="table-images" />
+                <div>
+                  <p>
+                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                    CLEAR SIDE AND REAR WINDOWS
+                  </p>
+                  <p>Color: Black Denim, MATT</p>
+                </div>
+              </td>
+              <td><div class="qty">1</div></td>
+              <td>$250.00</td>
+              <td>
+                <span>&#128393;</span>
+                <span>&#9447;</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--<aside>
+          <h3>SUMMARY</h3>
+          <div>
+            <ul>
+              <li class="flex-calculate">
+                <p>ESTIMATE SHIPPING AND TAX</p>
+                <div>+</div>
+              </li>
+              <li>
+                <div class="flex-calculate">
+                  <p id="p-subtotal">SUBTOTAL</p>
+                  <div>$150.00</div>
+                </div>
+                <div class="flex-calculate">
+                  <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
+                  <div>$5.00</div>
+                </div>
+              </li>
+              <li id="last-li">
+                <div class="flex-calculate">
+                  <h4>ORDER TOTAL</h4>
+                  <div>$155.00</div>
+                </div>
+                <div id="checkout-btn">PROCEED TO CHECKOUT</div>
+                <div id="checkout-last-div">
+                  <a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside> -->
+      </div>
     </main>
     <footer></footer>
   </body>
 </html>
+
+<!-- https://www.figma.com/design/J5yc7ODTULv4Uk3mIIVKaP/FrontendZadatakzaPrijavu?node-id=0-1&node-type=canvas-->
