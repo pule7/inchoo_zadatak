@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,138 +53,146 @@
           <div>&#128722;MY CART</div>
         </div>
       </section>
-
-      <!-- <hr id="header-hr" /> -->
     </header>
     <main>
       <h1>SHOPPING CART</h1>
-      <div id="shopping-div">
-        <table>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Qty</th>
-              <th>SUBTOTAL</th>
-              <th></th>
-              <th id="summary">SUMMARY</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="4"><hr /></td>
-            </tr>
-            <tr>
-              <td class="item-card">
-                <img src="images/jeep1.jpg" class="table-images" />
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>SUBTOTAL</th>
+            <th></th>
+            <th id="summary">SUMMARY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4"><hr /></td>
+          </tr>
+          <tr>
+            <td class="item-card">
+              <img src="images/jeep1.jpg" class="table-images" />
+              <div>
+                <p>
+                  FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                  1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                  CLEAR SIDE AND REAR WINDOWS
+                </p>
+                <p>Color: Black Denim</p>
+              </div>
+            </td>
+            <td><div class="qty">1</div></td>
+            <td>$150.00</td>
+            <td>
+              <span>&#128393;</span>
+              <span>&#9447;</span>
+            </td>
+            <td rowspan="4">
+
+
+
+              <aside>
                 <div>
-                  <p>
-                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
-                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
-                    CLEAR SIDE AND REAR WINDOWS
-                  </p>
-                  <p>Color: Black Denim</p>
+                  <ul>
+                    <li id="li-calculate" class="flex-calculate">
+                      <p>ESTIMATE SHIPPING AND TAX</p>
+                      <div>&#10133;</div>
+                    </li>
+                    <li class="conditional-list-item">
+                      <label for="country-input">Country</label>
+                      <input type="text" id="country-input">
+                    </li>
+                    <li class="conditional-list-item">
+                      <label for="state-input">State/Province</label>
+                      <input type="text" id="state-input">
+                    </li>
+                    <li class="conditional-list-item">
+                      <label for="postal-code-input">Zip/Postal Code</label>
+                      <input type="text" id="postal-code-input">
+                    </li>
+                    <li>
+                      <div class="flex-calculate">
+                        <p id="p-subtotal">SUBTOTAL</p>
+                        <div>$150.00</div>
+                      </div>
+                      <div class="flex-calculate">
+                        <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
+                        <div>$5.00</div>
+                      </div>
+                    </li>
+                    <li id="last-li">
+                      <div class="flex-calculate">
+                        <h2>ORDER TOTAL</h2>
+                        <div>$155.00</div>
+                      </div>
+                      <div id="checkout-btn">PROCEED TO CHECKOUT</div>
+                      <div id="checkout-last-div">
+                        <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </td>
-              <td><div class="qty">1</div></td>
-              <td>$150.00</td>
-              <td>
-                <span>&#128393;</span>
-                <span>&#9447;</span>
-              </td>
-              <td rowspan="4">
-                <aside>
-                  <div>
-                    <ul>
-                      <li class="flex-calculate">
-                        <p>ESTIMATE SHIPPING AND TAX</p>
-                        <div>&#x2795;</div>
-                      </li>
-                      <li>
-                        <div class="flex-calculate">
-                          <p id="p-subtotal">SUBTOTAL</p>
-                          <div>$150.00</div>
-                        </div>
-                        <div class="flex-calculate">
-                          <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
-                          <div>$5.00</div>
-                        </div>
-                      </li>
-                      <li id="last-li">
-                        <div class="flex-calculate">
-                          <h2>ORDER TOTAL</h2>
-                          <div>$155.00</div>
-                        </div>
-                        <div id="checkout-btn">PROCEED TO CHECKOUT</div>
-                        <div id="checkout-last-div">
-                          <a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </aside>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="4"><hr /></td>
-            </tr>
-            <tr>
-              <td class="item-card">
-                <img src="images/jeep1.jpg" class="table-images" />
-                <div>
-                  <p>
-                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
-                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
-                    CLEAR SIDE AND REAR WINDOWS
-                  </p>
-                  <p>Color: Black Denim, MATT</p>
-                </div>
-              </td>
-              <td><div class="qty">1</div></td>
-              <td>$250.00</td>
-              <td>
-                <span>&#128393;</span>
-                <span>&#9447;</span>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="4"><hr /></td>
-            </tr>
-          </tbody>
-        </table>
-        <!--<aside>
-          <h3>SUMMARY</h3>
-          <div>
-            <ul>
-              <li class="flex-calculate">
-                <p>ESTIMATE SHIPPING AND TAX</p>
-                <div>+</div>
-              </li>
-              <li>
-                <div class="flex-calculate">
-                  <p id="p-subtotal">SUBTOTAL</p>
-                  <div>$150.00</div>
-                </div>
-                <div class="flex-calculate">
-                  <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
-                  <div>$5.00</div>
-                </div>
-              </li>
-              <li id="last-li">
-                <div class="flex-calculate">
-                  <h4>ORDER TOTAL</h4>
-                  <div>$155.00</div>
-                </div>
-                <div id="checkout-btn">PROCEED TO CHECKOUT</div>
-                <div id="checkout-last-div">
-                  <a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside> -->
+              </aside>
+
+
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"><hr /></td>
+          </tr>
+          <tr>
+            <td class="item-card">
+              <img src="images/jeep1.jpg" class="table-images" />
+              <div>
+                <p>
+                  FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                  1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                  CLEAR SIDE AND REAR WINDOWS
+                </p>
+                <p>Color: Black Denim, MATT</p>
+              </div>
+            </td>
+            <td><div class="qty">1</div></td>
+            <td>$250.00</td>
+            <td>
+              <span>&#128393;</span>
+              <span>&#9447;</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"><hr /></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="after-table-div">
+        <div id="discount-div">
+          <input
+            type="text"
+            id="discount-input"
+            placeholder="Enter Discount Code"
+          />
+          <div>APPLY</div>
+        </div>
+        <div id="update-shopping-card">UPDATE SHOPPING CARD</div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li>/</li>
+        <li><a href="#">CONTACT US</a></li>
+        <li>/</li>
+        <li><a href="#">SEARCH TERMS</a></li>
+        <li>/</li>
+        <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>
+        <li>/</li>
+        <li><a href="#">INSTALLATION VIDEOS</a></li>
+      </ul>
+      <div><a href="#"
+        >Contact our Customer Service
+        <i class="fas fa-phone-square"></i> (800) 333-3567</a></div>
+    </footer>
   </body>
 </html>
 
