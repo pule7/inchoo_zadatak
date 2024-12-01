@@ -16,8 +16,8 @@
     <header>
       <section id="header-black">
         <a href="#"
-          >Contact our Customer Service
-          <i class="fas fa-phone-square"></i> (800) 333-3567</a
+          >Contact our Customer Service 
+          <span>☏</span> (800) 333-3567</a
         >
         <ul>
           <li><a class="bold" href="#">ABOUT US</a></li>
@@ -56,6 +56,8 @@
     </header>
     <main>
       <h1>SHOPPING CART</h1>
+
+      <section id="main-section">
       <table>
         <thead>
           <tr>
@@ -63,7 +65,6 @@
             <th>Qty</th>
             <th>SUBTOTAL</th>
             <th></th>
-            <th id="summary">SUMMARY</th>
           </tr>
         </thead>
         <tbody>
@@ -87,55 +88,6 @@
             <td>
               <span>&#128393;</span>
               <span>&#9447;</span>
-            </td>
-            <td rowspan="4">
-
-
-
-              <aside>
-                <div>
-                  <ul>
-                    <li id="li-calculate" class="flex-calculate">
-                      <p>ESTIMATE SHIPPING AND TAX</p>
-                      <div>&#10133;</div>
-                    </li>
-                    <li class="conditional-list-item">
-                      <label for="country-input">Country</label>
-                      <input type="text" id="country-input">
-                    </li>
-                    <li class="conditional-list-item">
-                      <label for="state-input">State/Province</label>
-                      <input type="text" id="state-input">
-                    </li>
-                    <li class="conditional-list-item">
-                      <label for="postal-code-input">Zip/Postal Code</label>
-                      <input type="text" id="postal-code-input">
-                    </li>
-                    <li>
-                      <div class="flex-calculate">
-                        <p id="p-subtotal">SUBTOTAL</p>
-                        <div>$150.00</div>
-                      </div>
-                      <div class="flex-calculate">
-                        <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
-                        <div>$5.00</div>
-                      </div>
-                    </li>
-                    <li id="last-li">
-                      <div class="flex-calculate">
-                        <h2>ORDER TOTAL</h2>
-                        <div>$155.00</div>
-                      </div>
-                      <div id="checkout-btn">PROCEED TO CHECKOUT</div>
-                      <div id="checkout-last-div">
-                        <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </aside>
-
-
             </td>
           </tr>
           <tr>
@@ -165,6 +117,63 @@
           </tr>
         </tbody>
       </table>
+      <div id="sidebar">
+        <h3 id="summary">SUMMARY</h3>
+        <aside>
+          <div>
+            <ul>
+              <li id="li-calculate" class="flex-calculate">
+                <p>ESTIMATE SHIPPING AND TAX</p>
+                <div><p>&#10133;</p></div>
+              </li>
+              <li class="conditional-list-item">
+                <label for="country-select">Country</label>
+                <select id="country-select" placeholder="United States">
+                  <option value="United States">United States</option>
+                  <option value="Netherland">Netherland</option>
+                  <option value="Croatia">Croatia</option>
+                </select>
+              </li>
+              <li class="conditional-list-item">
+                <label for="state-input">State/Province</label>
+                <input type="text" id="state-input" />
+              </li>
+              <li class="conditional-list-item">
+                <label for="postal-code-input">Zip/Postal Code</label>
+                <input type="text" id="postal-code-input" />
+              </li>
+              <li class="conditional-list-item">
+                <h4>Flat Rate</h4>
+                <div id="checked-radio-btn">
+                  <input id="flat-rate" type="radio" checked />
+                  <label for="flat-rate">Fixed($5.00)</label>
+                </div>
+              </li>
+              <li>
+                <div class="flex-calculate">
+                  <p id="p-subtotal">SUBTOTAL</p>
+                  <div>$150.00</div>
+                </div>
+                <div class="flex-calculate">
+                  <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
+                  <div>$5.00</div>
+                </div>
+              </li>
+              <li id="last-li">
+                <div class="flex-calculate">
+                  <h2>ORDER TOTAL</h2>
+                  <div>$155.00</div>
+                </div>
+                <div id="checkout-btn">PROCEED TO CHECKOUT</div>
+                <div id="checkout-last-div">
+                  <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      </section>
       <div id="after-table-div">
         <div id="discount-div">
           <input
@@ -189,9 +198,12 @@
         <li>/</li>
         <li><a href="#">INSTALLATION VIDEOS</a></li>
       </ul>
-      <div><a href="#"
-        >Contact our Customer Service
-        <i class="fas fa-phone-square"></i> (800) 333-3567</a></div>
+      <div>
+        <a href="#"
+          >Contact our Customer Service 
+          <span>☏</span> (800) 333-3567</a
+        >
+      </div>
     </footer>
   </body>
 </html>

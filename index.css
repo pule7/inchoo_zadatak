@@ -103,6 +103,7 @@ main {
   padding: 0 8rem;
 }
 
+
 h1 {
   color: rgb(47, 47, 47);
   margin-bottom: 3rem;
@@ -113,10 +114,16 @@ h1 {
   font-size: 0.8rem;
 }
 
+#main-section {
+  display: flex;
+}
+
 table {
-  width: 100%;
+  display: inline-block;
+  width: 75%;
   text-align: left;
   font-size: small;
+  
 }
 
 .table-images {
@@ -137,14 +144,21 @@ table {
   text-align: center;
 }
 
-aside {
+#sidebar {
+  margin-top: -1.3rem;
   margin-left: 1%;
+  width: 24%;
+}
+
+
+aside {
+  
   font-size: small;
   font-weight: bold;
 }
 
-aside h3 {
-  margin: 0;
+#summary {
+  margin: 0.8rem;
 }
 
 aside ul {
@@ -156,7 +170,7 @@ aside ul {
 
 aside li {
   margin-bottom: 2px;
-  padding: 1rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   background-color: rgb(244, 240, 240);
 }
 
@@ -200,8 +214,16 @@ aside span {
   font-weight: lighter;
 }
 
-#checkout-last-div {
-  margin: 0 auto;
+aside input {
+  width: 95%;
+  height: 2rem;
+  border: 1.5px rgb(122, 113, 113) solid;
+}
+
+aside select {
+  width: 98%;
+  height: 2.3rem;
+  border: 1.5px rgb(122, 113, 113) solid;
 }
 
 aside a {
@@ -210,6 +232,10 @@ aside a {
   color: black;
   font-size: smaller;
   font-weight: bold;
+}
+
+#checkout-last-div {
+  margin: 0 auto;
 }
 
 #p-subtotal {
@@ -263,6 +289,7 @@ footer {
   background-color: rgb(47, 47, 47);
   align-items: center;
   text-align: center;
+  font-family: initial;
 }
 
 footer ul {
@@ -274,8 +301,6 @@ footer ul {
 footer li {
   margin-right: 1rem;
 }
-
-
 
 .conditional-list-item {
   display: none;
@@ -295,4 +320,21 @@ footer li {
   font-weight: bold;
 }
 
+#checked-radio-btn {
+  display: flex;
+  align-items: center;
+  color: black;
+}
 
+#li-calculate:hover {
+  cursor: pointer;
+}
+
+#flat-rate {
+  width: 1rem;
+  height: 1rem;
+  color: black;
+  margin: 0;
+  margin-right: 0.5rem;
+  accent-color: black;
+}
