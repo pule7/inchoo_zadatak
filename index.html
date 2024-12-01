@@ -15,164 +15,269 @@
   <body>
     <header>
       <section id="header-black">
-        <a href="#"
-          >Contact our Customer Service 
-          <span>☏</span> (800) 333-3567</a
-        >
-        <ul>
-          <li><a class="bold" href="#">ABOUT US</a></li>
-          <li><a class="bold" href="#">CONTACT US</a></li>
-          <li><a class="bold" href="#">WHERE TO BUY</a></li>
-        </ul>
-        <a href="#"
+        <div>
+          <a id="contact-text-1" href="#">Contact our Customer Service</a>
+          <span>☏ (800) 333-3567</span>
+          <ul>
+            <li><a class="bold" href="#">ABOUT US</a></li>
+            <li><a class="bold" href="#">CONTACT US</a></li>
+            <li><a class="bold" href="#">WHERE TO BUY</a></li>
+          </ul>
+        </div>
+        <a id="contact-text-2" href="#"
           >Promo message area - shipping advantages, special offers...</a
         >
-        <a class="bold" href="#">SIGN IN</a>
+        <div id="sign-in-div">
+          <img src="images/user-16.ico" alt="white user icon" />
+          <a class="bold" href="#">SIGN IN</a>
+        </div>
       </section>
 
       <section id="header-white">
-        <img src="/images/logo-web-inchoo.webp" id="logo" alt="inchoo logo" />
+        <div id="header-white-left">
+          <div id="hamburger-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M 8 5 C 6.3550302 5 5 6.3550302 5 8 C 5 9.6449698 6.3550302 11 8 11 L 24 11 C 25.64497 11 27 9.6449698 27 8 C 27 6.3550302 25.64497 5 24 5 L 8 5 z M 8 7 L 24 7 C 24.56503 7 25 7.4349698 25 8 C 25 8.5650302 24.56503 9 24 9 L 8 9 C 7.4349698 9 7 8.5650302 7 8 C 7 7.4349698 7.4349698 7 8 7 z M 8 13 C 6.3550302 13 5 14.35503 5 16 C 5 17.64497 6.3550302 19 8 19 L 24 19 C 25.64497 19 27 17.64497 27 16 C 27 14.35503 25.64497 13 24 13 L 8 13 z M 8 15 L 24 15 C 24.56503 15 25 15.43497 25 16 C 25 16.56503 24.56503 17 24 17 L 8 17 C 7.4349698 17 7 16.56503 7 16 C 7 15.43497 7.4349698 15 8 15 z M 8 21 C 6.3550302 21 5 22.35503 5 24 C 5 25.64497 6.3550302 27 8 27 L 24 27 C 25.64497 27 27 25.64497 27 24 C 27 22.35503 25.64497 21 24 21 L 8 21 z M 8 23 L 24 23 C 24.56503 23 25 23.43497 25 24 C 25 24.56503 24.56503 25 24 25 L 8 25 C 7.4349698 25 7 24.56503 7 24 C 7 23.43497 7.4349698 23 8 23 z"
+              ></path>
+            </svg>
+          </div>
+          <img src="/images/logo-web-inchoo.webp" id="logo" alt="inchoo logo" />
+        </div>
         <nav>
           <ul>
             <li>
               <div>
-                <span>/</span>
+                <span class="big">/</span>
                 <p>SOFT TOP<br />PRODUCTS</p>
               </div>
             </li>
             <li>
               <div>
-                <span>/</span>
+                <span class="big">/</span>
                 <p>JEEP<br />ACCESSORIES</p>
               </div>
             </li>
           </ul>
         </nav>
-        <div id="input-cart">
-          <input type="text" placeholder="Search entire store here..." />
-          <div>&#128722;MY CART</div>
+        <div id="magnifier-cart-div">
+          <div id="magnifier-div">&#128269;</div>
+          <div id="input-cart">
+            <input type="text" placeholder="Search entire store here..." />
+            <div>
+              <span id="cart-icon">&#128722</span>
+              <span id="cart-icon-text">MY CART</span>
+            </div>
+          </div>
         </div>
       </section>
     </header>
+    <!--------------------------------------------------------------------->
     <main>
       <h1>SHOPPING CART</h1>
-
       <section id="main-section">
-      <table>
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Qty</th>
-            <th>SUBTOTAL</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4"><hr /></td>
-          </tr>
-          <tr>
-            <td class="item-card">
-              <img src="images/jeep1.jpg" class="table-images" />
-              <div>
-                <p>
-                  FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
-                  1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
-                  CLEAR SIDE AND REAR WINDOWS
-                </p>
-                <p>Color: Black Denim</p>
-              </div>
-            </td>
-            <td><div class="qty">1</div></td>
-            <td>$150.00</td>
-            <td>
-              <span>&#128393;</span>
-              <span>&#9447;</span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4"><hr /></td>
-          </tr>
-          <tr>
-            <td class="item-card">
-              <img src="images/jeep1.jpg" class="table-images" />
-              <div>
-                <p>
-                  FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
-                  1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
-                  CLEAR SIDE AND REAR WINDOWS
-                </p>
-                <p>Color: Black Denim, MATT</p>
-              </div>
-            </td>
-            <td><div class="qty">1</div></td>
-            <td>$250.00</td>
-            <td>
-              <span>&#128393;</span>
-              <span>&#9447;</span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4"><hr /></td>
-          </tr>
-        </tbody>
-      </table>
-      <div id="sidebar">
-        <h3 id="summary">SUMMARY</h3>
-        <aside>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>SUBTOTAL</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="item-card">
+                  <div>
+                  <img src="images/jeep1.jpg" class="table-images" />
+                  </div>
+                  <div>
+                    <p>
+                      FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                      1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                      CLEAR SIDE AND REAR WINDOWS
+                    </p>
+                    <p>Color: Black Denim</p>
+                  </div>
+                </div>
+              </td>
+
+              <td><div class="qty">1</div></td>
+              <td>$150.00</td>
+              <td>
+                <span>&#128393;</span>
+                <span>&#9447;</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+            <tr>
+              <td class="item-card">
+                <img src="images/jeep1.jpg" class="table-images" />
+                <div>
+                  <p>
+                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                    CLEAR SIDE AND REAR WINDOWS
+                  </p>
+                  <p>Color: Black Denim, MATT</p>
+                </div>
+              </td>
+              <td><div class="qty">1</div></td>
+              <td>$250.00</td>
+              <td>
+                <span>&#128393;</span>
+                <span>&#9447;</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"><hr /></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+      <section id="hidden-card">
+        <div>
+          <hr>
+        </div>
+        
+        <div class="hidden-div-row">
           <div>
-            <ul>
-              <li id="li-calculate" class="flex-calculate">
-                <p>ESTIMATE SHIPPING AND TAX</p>
-                <div><p>&#10133;</p></div>
-              </li>
-              <li class="conditional-list-item">
-                <label for="country-select">Country</label>
-                <select id="country-select" placeholder="United States">
-                  <option value="United States">United States</option>
-                  <option value="Netherland">Netherland</option>
-                  <option value="Croatia">Croatia</option>
-                </select>
-              </li>
-              <li class="conditional-list-item">
-                <label for="state-input">State/Province</label>
-                <input type="text" id="state-input" />
-              </li>
-              <li class="conditional-list-item">
-                <label for="postal-code-input">Zip/Postal Code</label>
-                <input type="text" id="postal-code-input" />
-              </li>
-              <li class="conditional-list-item">
-                <h4>Flat Rate</h4>
-                <div id="checked-radio-btn">
-                  <input id="flat-rate" type="radio" checked />
-                  <label for="flat-rate">Fixed($5.00)</label>
-                </div>
-              </li>
-              <li>
-                <div class="flex-calculate">
-                  <p id="p-subtotal">SUBTOTAL</p>
-                  <div>$150.00</div>
-                </div>
-                <div class="flex-calculate">
-                  <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
-                  <div>$5.00</div>
-                </div>
-              </li>
-              <li id="last-li">
-                <div class="flex-calculate">
-                  <h2>ORDER TOTAL</h2>
-                  <div>$155.00</div>
-                </div>
-                <div id="checkout-btn">PROCEED TO CHECKOUT</div>
-                <div id="checkout-last-div">
-                  <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
-                </div>
-              </li>
-            </ul>
+            <img src="images/jeep1.jpg" class="table-images" />
           </div>
-        </aside>
-      </div>
+          <div>
+                  <p>
+                    FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                    1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                    CLEAR SIDE AND REAR WINDOWS
+                  </p>
+                  <p>Color: Black Denim</p>
+            </div>
+          </div>
+
+          <div class="hidden-div-row">
+                <div class="hidden-div-column">
+                  <p>Qty</p>
+                  <div class="qty">1</div>
+                </div>
+                <div class="hidden-div-column">
+                  <p>SUBTOTAL</p>
+                  <p>$150.00</p>
+                  <p>
+                    <span>&#128393;</span>
+                    <span>&#9447;</span>
+                  </p>
+                </div>
+          </div>
+          <div>
+            <hr>
+          </div>
+
+          <div class="hidden-div-row">
+            <div>
+              <img src="images/jeep1.jpg" class="table-images" />
+            </div>
+            <div>
+                    <p>
+                      FLIP TOP COMPLETE REPLACEMENT SOFT TOP, JEEP <br />
+                      1976-1995 CJ-7/WRANGLER, NO DOORS INCLUDED,<br />
+                      CLEAR SIDE AND REAR WINDOWS
+                    </p>
+                    <p>Color: Black Denim, MATT</p>
+              </div>
+            </div>
+  
+            <div class="hidden-div-row">
+                  <div class="hidden-div-column">
+                    <p>Qty</p>
+                    <div class="qty">1</div>
+                  </div>
+                  <div class="hidden-div-column">
+                    <p>SUBTOTAL</p>
+                    <p>$250.00</p>
+                    <p>
+                      <span>&#128393;</span>
+                      <span>&#9447;</span>
+                    </p>
+                  </div>
+            </div>
+            <div>
+              <hr>
+            </div>
+
+      </section>
+        
+        
+        <div id="sidebar">
+          <h3 id="summary">SUMMARY</h3>
+          <aside>
+            <div>
+              <ul>
+                <li id="li-calculate" class="flex-calculate">
+                  <p>ESTIMATE SHIPPING AND TAX</p>
+                  <div><p>&#10133;</p></div>
+                </li>
+                <li class="conditional-list-item">
+                  <label for="country-select">Country</label>
+                  <select id="country-select" placeholder="United States">
+                    <option value="United States">United States</option>
+                    <option value="Netherland">Netherland</option>
+                    <option value="Croatia">Croatia</option>
+                  </select>
+                </li>
+                <li class="conditional-list-item">
+                  <label for="state-input">State/Province</label>
+                  <input type="text" id="state-input" />
+                </li>
+                <li class="conditional-list-item">
+                  <label for="postal-code-input">Zip/Postal Code</label>
+                  <input type="text" id="postal-code-input" />
+                </li>
+                <li class="conditional-list-item">
+                  <h4>Flat Rate</h4>
+                  <div id="checked-radio-btn">
+                    <input id="flat-rate" type="radio" checked />
+                    <label for="flat-rate">Fixed($5.00)</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex-calculate">
+                    <p id="p-subtotal">SUBTOTAL</p>
+                    <div>$150.00</div>
+                  </div>
+                  <div class="flex-calculate">
+                    <p>SHIPPING <span>(Flat Rate - Fixed)</span></p>
+                    <div>$5.00</div>
+                  </div>
+                </li>
+                <li id="last-li">
+                  <div class="flex-calculate">
+                    <h2>ORDER TOTAL</h2>
+                    <div>$155.00</div>
+                  </div>
+                  <div id="checkout-btn">PROCEED TO CHECKOUT</div>
+                  <div id="checkout-last-div">
+                    <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
       </section>
       <div id="after-table-div">
         <div id="discount-div">
@@ -186,23 +291,20 @@
         <div id="update-shopping-card">UPDATE SHOPPING CARD</div>
       </div>
     </main>
+
+    <!------------------------------------------------------------------------->
     <footer>
+      <p><span>&copy;</span> Jeep is a registered trademark of FCA US LLC</p>
       <ul>
-        <li><a href="#">ABOUT US</a></li>
-        <li>/</li>
-        <li><a href="#">CONTACT US</a></li>
-        <li>/</li>
-        <li><a href="#">SEARCH TERMS</a></li>
-        <li>/</li>
-        <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>
-        <li>/</li>
-        <li><a href="#">INSTALLATION VIDEOS</a></li>
+        <li><a href="#">ABOUT US</a>  <span>/</span></li>
+        <li><a href="#">CONTACT US</a>  <span>/</span></li>
+        <li><a href="#">SEARCH TERMS</a>  <span>/</span></li>
+        <li><a href="#">PRIVACY AND COOKIE POLICY</a> <span>/</span></li>
+        <li><a href="#">INSTALLATION VIDEOS </a> <span></span></li>
       </ul>
       <div>
-        <a href="#"
-          >Contact our Customer Service 
-          <span>☏</span> (800) 333-3567</a
-        >
+        <a href="#">Contact our Customer Service</a>
+        <span>☏ (800) 333-3567</span>
       </div>
     </footer>
   </body>
